@@ -1,0 +1,141 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aniXification.abstest"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.Sherlock.Light" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActionItems"
+            android:label="@string/title_activity_action_items" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.aniXification.abstest.TEST" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ForcedOverflowItem"
+            android:label="@string/title_activity_forced_overflow_item" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.aniXification.abstest.TEST" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ShareActionProviders"
+            android:label="@string/title_activity_share_action_provider" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.aniXification.abstest.TEST" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplitActionItems"
+            android:label="@string/title_activity_split_action_items"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.aniXification.abstest.TEST" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Styled"
+            android:label="@string/title_activity_styled"
+            android:theme="@style/Theme.Styled"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.aniXification.abstest.TEST" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TabNavigation"
+            android:label="@string/title_activity_tab_navigation" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.aniXification.abstest.TEST" />
+            </intent-filter>
+        </activity>
+
+        <!-- FRAGMENTS START -->
+        <activity
+            android:name=".FragmentAlertDialogSupport"
+            android:label="@string/title_activity_fragment_alert_dialog_support" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.aniXification.abstest.TEST" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FragmentArgumentsSupport"
+            android:label="@string/title_activity_fragment_arguments_support" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.aniXification.abstest.TEST" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FragmentContextMenuSupport"
+            android:label="@string/title_activity_fragment_context_menu_support" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.aniXification.abstest.TEST" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FragmentHideShowSupport"
+            android:label="@string/title_activity_fragment_hide_show_support" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.aniXification.abstest.TEST" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FragmentPagerSupport"
+            android:label="@string/title_activity_fragment_pager_support" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.aniXification.abstest.TEST" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FragmentTabs"
+            android:label="@string/title_activity_fragment_tabs" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.aniXification.abstest.TEST" />
+            </intent-filter>
+        </activity>
+        <!-- FRAGMENS END -->
+
+    </application>
+
+</manifest>
